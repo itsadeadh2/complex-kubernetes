@@ -6,5 +6,5 @@ docker push itsadeadh2/complex-server
 docker push itsadeadh2/complex-worker
 kubectl apply -f  k8s
 kubectl set image deployments/server-deployment server=itsadeadh2/complex-server:$SHA
-kubectl set image deployments/client-deployment server=itsadeadh2/complex-client:$SHA
-kubectl set image deployments/worker-deployment server=itsadeadh2/complex-worker:$SHA
+kubectl set image deployments/client-deployment client=itsadeadh2/complex-client:$SHA
+kubectl set image deployments/worker-deployment worker=itsadeadh2/complex-worker:$SHA
